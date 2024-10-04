@@ -20,3 +20,16 @@ const secondFunction = async()=>{
         console.error('error happend')
     }
 }
+
+
+///----2
+async function secondFunction2(){
+    try{
+        const  res = await fetch('https://jsonplaceholder.typicode.com/comments');
+        const data = await res.json();
+        console.log(data);
+    }
+    catch(error){
+        console.error('error happend')
+    }
+}
